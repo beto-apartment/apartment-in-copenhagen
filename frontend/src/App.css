@@ -1,0 +1,355 @@
+.App {
+  text-align: center;
+  min-width: fit-content;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.App-header {
+  margin-bottom: 0.5em;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* hint-recover-password */
+
+/* @keyframes colorCycle {
+  0% {
+    color: #1976d2;
+    color: #d32f2f;
+  }
+
+  50% {
+    color: #192cd2;
+    color: #d3632f;
+  }
+
+  100% {
+    color: #bd19d2;
+    color: #f78d02;
+  }
+} */
+
+.hint-recover-password {
+  /* animation: colorCycle 3s infinite alternate; */
+  /* 3 seconds cycle */
+  color: #d32f2f;
+  margin: 0;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* .App-link {
+  color: #61dafb;
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.timecard{
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 3; */
+}
+
+.timeCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: cadetblue; */
+  /* border-radius: 3px; */
+  margin-top: 1em;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+/* screen two */
+/* ---------- */
+.userTable{
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  margin: 2em 0;
+}
+
+.userTableHeader{
+  background-color: rgb(201, 197, 197);
+}
+
+.userSpan{
+  border: solid 0.01em;
+  background-color: #ffffc4;
+}
+
+.totalHoursStyle{
+  background-color: yellow;
+}
+
+.headerTitle{
+  border: solid 0.01em;
+  font-weight: bolder;
+}
+
+.jobdescription{
+  width: 10em;
+}
+
+.date-column{
+  width: 11em;
+}
+
+.hours-min-width{
+  min-width: 5em;
+}
+/* ---------- */
+/* screen two */
+
+/* update screen */
+.date{
+  width: 11em;
+}
+
+/* create */
+.day{
+  width: 1em;
+}
+
+.eachDay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1em;
+}
+
+.topeachday div{
+  min-height: 6em;
+}
+
+/* first input with descriptions */
+/* remove? */
+/* .topeachday{
+  margin-bottom: 1em;
+} */
+
+.topDay{
+  position: relative;
+  bottom: -1.75em;
+}
+
+.inputsDay{
+  min-width: 5.2em;
+  min-height: 1em;
+}
+
+/* checkbox holiday */
+.holiday{
+  margin: 0 2em;
+  width: 1.8em;
+  height: 1.8em;
+}
+
+.startA, .endA{
+  color: #00ae9d;
+  /* color: #086048; */  
+}
+
+.userTable .startA, .userTable .endA, .userTable .startB,
+.userTable .endB, .userTable .holiday-column, .freeWidth .startB,
+.freeWidth .endB, .freeWidth .holiday-column{
+  min-width: 5em;
+}
+
+.startB, .endB{
+  color: #ff3d00;
+  /* color: #563fc4; */  
+}
+
+.eachDay p {
+  margin-right: 1em;
+  /* margin: 0 1em 0 0; */
+}
+
+.monthTitle{
+  margin: auto;
+}
+
+form{
+  /* margin: 5em 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul{
+  margin: auto;
+  padding-left: 0;
+  max-width: fit-content;
+}
+
+.freeWidth{
+  max-width: none ;
+}
+
+li{  
+  list-style: none;
+  /* border: solid 0.01em; */
+  margin-bottom: 0.5em;
+}
+
+/* button{
+  min-width: 100%;
+  padding: 0.5em 1em;
+} */
+
+p{
+  text-align: left;
+}
+
+.screenBtn{
+  min-width: fit-content;
+  margin-bottom: 1em;  
+}
+
+.errorMessage{
+  position: fixed;
+  margin: auto;
+  top: 50%;
+  z-index: 1;
+  color: #282c34;
+  font-size: 3em;
+}
+
+.left22{
+  display: none;
+}
+
+.uploadBtn{
+  margin-top: 2em;
+}
+
+.spinner{
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  z-index: 1000;
+}
+
+/* seguir desde aca */
+/* @media only screen and (max-width: 600px) {
+  
+  .eachDay{
+    flex-direction: column;
+    padding: 3em 0;
+    width: 96vw;
+  }
+
+    .topDay{
+      bottom: 0em;
+    }
+
+  .eachDay:nth-child(odd){
+    background-color: #c5e6f6;
+  }
+
+  .mobileHide{
+    display: none;
+  }
+
+} */
+
+
+
+/* @media only screen and (max-width: 600px) {
+  .timecard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .left22{
+    display: initial;
+  }
+
+  .left, .left22{
+    grid-column: 1/2;
+  }
+
+  .dateright{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .jobright{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .startright{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .finishright{
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .totalright{
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+} */
+
+/* .monthT{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.monthD{
+  grid-column: 3/4;
+  grid-row: 2/3;
+} */
+
+/* .jobT{
+  grid-area: jobT;
+}
+
+.startT{
+  grid-area: startT;
+}
+
+.finishT{
+  grid-area: finishT;
+}
+
+.jobD{
+  grid-area: jobD;
+}
+
+.startD{
+  grid-area: startD;
+}
+
+.finishD{
+  grid-area: finishD;
+} */
